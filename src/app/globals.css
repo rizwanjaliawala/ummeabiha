@@ -1,0 +1,247 @@
+@import "tailwindcss";
+
+/* ── Design Tokens ───────────────────────────────────── */
+:root {
+  --background: #fafaf8;
+  --foreground: #111111;
+  --emerald: #0d5c4a;
+  --emerald-light: #11816a;
+  --emerald-dark: #094438;
+  --gold: #d4af37;
+  --gold-light: #e5c76b;
+  --gold-dark: #b8952e;
+  --beige: #f4efe6;
+  --beige-dark: #e8dfd2;
+  --navy: #1a2744;
+  --navy-light: #2a3d66;
+  --surface: #ffffff;
+  --surface-alt: #f8f6f1;
+  --muted: #6b7280;
+  --border: rgba(0, 0, 0, 0.06);
+  --border-strong: rgba(0, 0, 0, 0.12);
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.25);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 30px 70px rgba(0, 0, 0, 0.12);
+  --shadow-emerald: 0 16px 40px rgba(13, 92, 74, 0.2);
+  --shadow-gold: 0 16px 40px rgba(212, 175, 55, 0.15);
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+}
+
+/* ── Tailwind v4 Theme Extension ─────────────────────── */
+@theme inline {
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+  --font-arabic: var(--font-arabic);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-emerald: var(--emerald);
+  --color-emerald-light: var(--emerald-light);
+  --color-emerald-dark: var(--emerald-dark);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-beige: var(--beige);
+  --color-beige-dark: var(--beige-dark);
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-glass-bg: var(--glass-bg);
+  --color-glass-border: var(--glass-border);
+  --animate-fade-in: fade-in 0.6s ease-out both;
+  --animate-slide-up: slide-up 0.6s ease-out both;
+  --animate-slide-down: slide-down 0.4s ease-out both;
+  --animate-scale-in: scale-in 0.4s ease-out both;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+  --animate-pulse-glow: pulse-glow 3s ease-in-out infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+}
+
+/* ── Keyframes ────────────────────────────────────────── */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.1); }
+  50% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.25); }
+}
+
+/* ── Base ─────────────────────────────────────────────── */
+html, body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: var(--foreground);
+}
+
+/* ── Typography ──────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), "Cormorant Garamond", Georgia, serif;
+}
+
+/* ── Scrollbar ───────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--beige);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--emerald);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--emerald-light);
+}
+
+/* ── Premium Utilities ───────────────────────────────── */
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-emerald {
+  background: linear-gradient(135deg, var(--emerald), var(--emerald-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(180deg, var(--navy) 0%, #0f1f18 40%, var(--emerald-dark) 100%);
+}
+
+.bg-gradient-emerald {
+  background: linear-gradient(135deg, var(--emerald-dark), var(--emerald), var(--emerald-light));
+}
+
+.bg-gradient-gold {
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-light));
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.smooth-shadow {
+  box-shadow: var(--shadow-lg);
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.gold-border-top {
+  border-top: 2px solid var(--gold);
+}
+
+.gold-line {
+  height: 3px;
+  width: 60px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+}
+
+.islamic-border {
+  border-image: repeating-linear-gradient(
+    90deg,
+    var(--gold) 0px,
+    var(--gold) 8px,
+    transparent 8px,
+    transparent 16px,
+    var(--emerald) 16px,
+    var(--emerald) 24px,
+    transparent 24px,
+    transparent 32px
+  ) 2;
+}
+
+/* ── Reduced Motion ──────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Focus Styles ────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--emerald);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
