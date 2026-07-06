@@ -10,7 +10,7 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Near Masjid al-Haram",
     description: "A world-class luxury hotel offering exceptional hospitality and premium amenities with convenient access to the Haram for an elevated pilgrimage experience.",
     amenities: ["Fine Dining", "Spa", "Concierge", "Fitness Center", "Room Service", "Prayer Room"],
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    image: "/images/hotels/Swissotel.jpg",
   },
   {
     id: "clock-tower",
@@ -20,7 +20,7 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Overlooking the Haram",
     description: "The iconic Clock Tower hotel offers some of the most exclusive Haram views in Makkah, with royal-level accommodation and world-class dining options.",
     amenities: ["Panoramic Haram View", "Royal Suites", "Fine Dining", "Shopping Mall", "VIP Lounge", "Spa & Wellness"],
-    image: "https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?w=800&q=80",
+    image: "/images/hotels/clock-tower.jpg",
   },
   {
     id: "address-hotel",
@@ -30,7 +30,7 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Steps from the Haram",
     description: "A prestigious luxury hotel known for refined elegance, impeccable service, and stunning views, providing a serene retreat for pilgrims seeking premium comfort.",
     amenities: ["Haram View", "Butler Service", "Multiple Restaurants", "Fitness", "Business Center", "Lounge Access"],
-    image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+    image: "/images/hotels/address.webp",
   },
   {
     id: "le-meridien",
@@ -40,7 +40,7 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Walking distance to Haram",
     description: "A Marriott luxury brand offering sophisticated accommodations with contemporary design, multiple dining venues, and premium amenities for a comfortable stay.",
     amenities: ["Modern Rooms", "Restaurant", "Fitness Center", "Business Center", "Laundry", "Room Service"],
-    image: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80",
+    image: "/images/hotels/le-meridien.jpg",
   },
   {
     id: "movenpick-hajar",
@@ -50,7 +50,7 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Near Masjid al-Haram",
     description: "Part of the prestigious Abraj Al-Bait complex, offering comfortable rooms with modern amenities and excellent proximity to the Holy Mosque.",
     amenities: ["Haram Proximity", "Restaurant", "Fitness", "Prayer Room", "Business Center", "Concierge"],
-    image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+    image: "/images/hotels/movenpick-hajar.jpg",
   },
   {
     id: "voco",
@@ -60,7 +60,7 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Convenient access to Haram",
     description: "An IHG premium brand hotel offering thoughtful design, comfortable rooms, and reliable service for pilgrims seeking quality accommodation in the holy city.",
     amenities: ["Comfortable Rooms", "Restaurant", "Fitness Center", "Meeting Rooms", "Room Service", "Shuttle Service"],
-    image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+    image: "/images/hotels/voco.avif",
   },
 
   /* ── Madinah Hotels ────────────────────────────────── */
@@ -72,7 +72,7 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Near Masjid an-Nabawi",
     description: "A well-established hotel in Madinah offering spacious rooms, warm hospitality, and excellent proximity to the Prophet's Mosque for a spiritually enriching stay.",
     amenities: ["Mosque Proximity", "Restaurant", "Lounge", "Fitness", "Prayer Room", "Business Center"],
-    image: "https://images.unsplash.com/photo-1615880484746-a134be9a6ecf?w=800&q=80",
+    image: "/images/hotels/grand-zowar.jpg",
   },
   {
     id: "zowar-international",
@@ -82,7 +82,7 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Walking distance to Masjid an-Nabawi",
     description: "Modern hotel offering comfortable accommodation with thoughtful amenities, perfectly positioned for easy access to Masjid an-Nabawi and key Ziyarah sites.",
     amenities: ["Mosque View", "Multiple Restaurants", "Fitness Center", "Business Center", "Lounge", "Room Service"],
-    image: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
+    image: "/images/hotels/zowar-international.jpg",
   },
   {
     id: "ritz-al-madinah",
@@ -92,7 +92,7 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Minutes from Masjid an-Nabawi",
     description: "A refined hospitality experience with elegant rooms, excellent dining, and warm Arabian hospitality, conveniently located near all major religious landmarks.",
     amenities: ["Comfortable Rooms", "Restaurant", "Meeting Rooms", "Fitness", "Prayer Room", "Shuttle Service"],
-    image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+    image: "/images/hotels/ritz-al-madinah.jpg",
   },
   {
     id: "hayat-international",
@@ -102,7 +102,7 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Near Masjid an-Nabawi",
     description: "A welcoming hotel combining modern comforts with traditional hospitality, providing pilgrims with a peaceful base for their spiritual journey in the city of the Prophet ﷺ.",
     amenities: ["Mosque Proximity", "Restaurant", "Lounge", "Fitness Center", "Room Service", "Laundry"],
-    image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80",
+    image: "/images/hotels/hayat-international.jpg",
   },
   {
     id: "concord-dar-al-khair",
@@ -112,6 +112,6 @@ export const hotels: Hotel[] = [
     distanceToHaram: "Walking distance to Masjid an-Nabawi",
     description: "A quality hotel offering well-appointed rooms, reliable service, and convenient access to the Prophet's Mosque, ideal for families and groups performing Umrah.",
     amenities: ["Comfortable Rooms", "Restaurant", "Prayer Room", "Fitness", "Business Center", "Room Service"],
-    image: "https://images.unsplash.com/photo-1586611292717-f828b167408c?w=800&q=80",
+    image: "/images/hotels/concord-dar-al-khair.jpg",
   },
 ];
