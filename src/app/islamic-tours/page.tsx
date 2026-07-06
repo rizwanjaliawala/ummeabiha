@@ -23,8 +23,14 @@ export default function IslamicToursPage() {
       <div className="mx-auto max-w-7xl px-6 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {tours.map((tour) => (
           <div key={tour.id} className="bg-surface border border-border rounded-3xl overflow-hidden shadow-[var(--shadow-sm)] flex flex-col transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-md)]">
-            <div className="aspect-[4/3] bg-navy relative">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
+            <div className="aspect-[4/3] bg-navy relative overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={tour.image}
+                alt={tour.title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10" />
               <div className="absolute bottom-4 left-4 z-20 text-white">
                 <span className="text-xs font-semibold tracking-wider text-gold uppercase mb-1 block">{tour.destination}</span>
                 <h3 className="text-xl font-bold font-[family-name:var(--font-heading)]">{tour.title}</h3>
