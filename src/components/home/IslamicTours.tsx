@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
 import RevealOnScroll from "@/components/sections/RevealOnScroll";
 import SectionHeader from "@/components/sections/SectionHeader";
 import { tours } from "@/data/tours";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react";
 
 export default function IslamicTours() {
   const featuredTours = tours.slice(0, 3);
@@ -26,24 +27,37 @@ export default function IslamicTours() {
               delay={index * 0.1}
             >
               <a href={`/islamic-tours#${tour.id}`} className="group block h-full">
-                <div className="relative h-full overflow-hidden rounded-3xl bg-navy isolate">
-                  {/* Image Placeholder */}
-                  <div className="absolute inset-0 bg-navy/80 group-hover:scale-105 transition-transform duration-700 -z-10" />
-                  
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent -z-10" />
+                <div className="relative h-80 overflow-hidden rounded-3xl bg-navy isolate">
+                  {/* Background image */}
+                  <Image
+                    src={tour.image}
+                    alt={tour.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
 
-                  <div className="flex flex-col h-full justify-end p-8">
-                    <p className="text-sm font-medium text-gold mb-2 uppercase tracking-wider">
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+
+                  {/* Duration badge */}
+                  <div className="absolute top-4 right-4 flex items-center gap-1.5 bg-black/40 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1">
+                    <Clock className="h-3 w-3 text-gold" />
+                    <span className="text-xs text-white font-medium">{tour.duration}</span>
+                  </div>
+
+                  {/* Content */}
+                  <div className="absolute inset-x-0 bottom-0 p-6 flex flex-col">
+                    <p className="text-xs font-semibold text-gold mb-1.5 uppercase tracking-widest">
                       {tour.destination}
                     </p>
-                    <h3 className="text-2xl font-semibold text-white mb-3 font-[family-name:var(--font-heading)]">
+                    <h3 className="text-xl font-bold text-white mb-2 font-[family-name:var(--font-heading)] leading-tight">
                       {tour.title}
                     </h3>
-                    <p className="text-white/70 text-sm line-clamp-2 mb-6">
+                    <p className="text-white/70 text-sm line-clamp-2 mb-4">
                       {tour.description}
                     </p>
-                    
-                    <div className="flex items-center gap-2 text-emerald-light font-medium text-sm group-hover:text-gold transition-colors">
+                    <div className="flex items-center gap-2 text-emerald-400 font-semibold text-sm group-hover:text-gold transition-colors">
                       Explore Tour
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </div>

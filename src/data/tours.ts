@@ -15,7 +15,7 @@ export const tours: Tour[] = [
       "Masjid al-Jinn",
       "Museum of the Two Holy Mosques",
     ],
-    image: "/images/tours/makkah-ziyarah.jpg",
+    image: "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80",
   },
   {
     id: "madinah-ziyarah",
@@ -31,7 +31,7 @@ export const tours: Tour[] = [
       "Jannat al-Baqi — Historic cemetery",
       "Madinah Date Farms",
     ],
-    image: "/images/tours/madinah-ziyarah.jpg",
+    image: "https://images.unsplash.com/photo-1519817914152-22d216bb9170?w=800&q=80",
   },
   {
     id: "taif-excursion",
@@ -47,7 +47,7 @@ export const tours: Tour[] = [
       "Rose gardens & perfume factories",
       "Traditional souq experience",
     ],
-    image: "/images/tours/taif.jpg",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
   },
   {
     id: "istanbul-heritage",
@@ -64,7 +64,7 @@ export const tours: Tour[] = [
       "Grand Bazaar & Spice Market",
       "Bosphorus sunset cruise",
     ],
-    image: "/images/tours/istanbul.jpg",
+    image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&q=80",
   },
   {
     id: "cairo-islamic",
@@ -80,6 +80,6 @@ export const tours: Tour[] = [
       "Khan el-Khalili bazaar",
       "Islamic Art Museum",
     ],
-    image: "/images/tours/cairo.jpg",
+    image: "https://images.unsplash.com/photo-1539768942893-daf853ebf36c?w=800&q=80",
   },
 ];
