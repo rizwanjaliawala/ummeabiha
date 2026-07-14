@@ -27,7 +27,7 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-white/90 backdrop-blur-xl shadow-[var(--shadow-md)] border-b border-border"
+            ? "bg-[#1e1e1e]/90 backdrop-blur-xl shadow-[var(--shadow-md)] border-b border-white/10"
             : "bg-transparent"
         )}
       >
@@ -122,7 +122,8 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 250 }}
-              className="absolute right-0 top-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl"
+              className="absolute right-0 top-0 h-full w-80 max-w-[85vw] shadow-2xl"
+              style={{ background: '#1e1e1e' }}
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex h-20 items-center justify-between px-6 border-b border-border">

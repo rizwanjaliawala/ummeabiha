@@ -101,7 +101,7 @@ export default function RootLayout({
       className={`${headingFont.variable} ${bodyFont.variable} ${arabicFont.variable} h-full antialiased`}
     >
       <head>
-        <meta name="theme-color" content="#0d5c4a" />
+        <meta name="theme-color" content="#d62b2b" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

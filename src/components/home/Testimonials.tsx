@@ -26,11 +26,11 @@ export default function Testimonials() {
               delay={index * 0.1}
             >
               <div className="relative flex flex-col h-full p-8 rounded-3xl bg-surface-alt border border-border">
-                <Quote className="absolute top-6 right-8 h-10 w-10 text-emerald/10" />
+                <Quote className="absolute top-6 right-8 h-10 w-10 text-red/10" />
                 
                 <div className="flex gap-1 mb-6">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-gold text-gold" />
+                    <Star key={i} className="h-4 w-4 fill-red text-red" />
                   ))}
                 </div>
                 
@@ -39,7 +39,7 @@ export default function Testimonials() {
                 </p>
                 
                 <div className="flex items-center gap-4 mt-auto pt-6 border-t border-border">
-                  <div className="h-10 w-10 rounded-full bg-emerald/10 flex items-center justify-center text-emerald font-bold font-[family-name:var(--font-heading)]">
+                  <div className="h-10 w-10 rounded-full bg-red/10 flex items-center justify-center text-red font-bold font-[family-name:var(--font-heading)]">
                     {testimonial.name.charAt(0)}
                   </div>
                   <div>

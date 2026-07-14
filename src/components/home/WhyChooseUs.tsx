@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
                 className="h-full"
               >
                 <Card hover className="h-full flex flex-col group p-8">
-                  <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald/10 text-emerald transition-colors group-hover:bg-emerald group-hover:text-white">
+                  <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-red/10 text-red transition-colors group-hover:bg-red group-hover:text-white">
                     <Icon className="h-6 w-6 transition-transform group-hover:scale-110" />
                   </div>
                   <h3 className="mb-3 text-xl font-semibold text-foreground">

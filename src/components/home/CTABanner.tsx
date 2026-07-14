@@ -12,8 +12,8 @@ export default function CTABanner() {
         <RevealOnScroll direction="up">
           <div className="rounded-3xl bg-navy border border-navy-light p-10 sm:p-16 text-center relative overflow-hidden shadow-[var(--shadow-xl)]">
             {/* Background Decorations */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-emerald/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-gold/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-red/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-red/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
             
             <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-tight mb-6 relative z-10">
               Ready to embark on a sacred journey?

@@ -36,7 +36,7 @@ export default function FAQSection() {
                 <div 
                   className={cn(
                     "rounded-2xl border transition-colors duration-300 overflow-hidden",
-                    isOpen ? "border-emerald bg-white shadow-[var(--shadow-sm)]" : "border-border bg-surface hover:border-emerald/30"
+                    isOpen ? "border-red bg-surface shadow-[var(--shadow-sm)]" : "border-border bg-surface hover:border-red/30"
                   )}
                 >
                   <button
@@ -46,14 +46,14 @@ export default function FAQSection() {
                   >
                     <span className={cn(
                       "font-semibold text-lg pr-8 transition-colors",
-                      isOpen ? "text-emerald" : "text-foreground"
+                      isOpen ? "text-red" : "text-foreground"
                     )}>
                       {faq.question}
                     </span>
                     <ChevronDown 
                       className={cn(
                         "h-5 w-5 shrink-0 transition-transform duration-300",
-                        isOpen ? "rotate-180 text-emerald" : "text-muted"
+                        isOpen ? "rotate-180 text-red" : "text-muted"
                       )} 
                     />
                   </button>

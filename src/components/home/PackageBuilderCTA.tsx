@@ -13,7 +13,7 @@ export default function PackageBuilderCTA() {
       {/* Content */}
       <div className="mx-auto max-w-5xl px-6 relative z-10 text-center">
         <RevealOnScroll direction="up">
-          <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 mb-8 text-gold">
+          <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 mb-8 text-red-light">
             <Settings2 className="h-8 w-8" />
           </div>
           
